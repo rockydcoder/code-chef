@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
+	ios::sync_with_stdio(false);
 	int T = 0;
 	cin >> T;
 	for (int i = 0; i < T; i++) {
