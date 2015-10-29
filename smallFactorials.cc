@@ -2,7 +2,6 @@
 using namespace std;
 int main() {
 	ios::sync_with_stdio(false);
-	long arr[200] = {1};
 	int t, temp, m, n, product;
 	cin >> t;
 	while (t--) {

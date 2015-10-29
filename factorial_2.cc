@@ -9,8 +9,8 @@ int main() {
 		cin >> N;
 		Z = 0;
 		a = 5;
-		while ( a <= N) {
-			Z += N / a;
+		while ( a <= N) s{
+			Z += Ns / a;
 			a *= 5;
 		}
 		cout << Z << endl;

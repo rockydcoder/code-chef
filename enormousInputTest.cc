@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-	std::ios::sync_with_stdio(false);
+	ios::sync_with_stdio(false);
 	int n, k, counter = 0, temp;
 	cin >> n >> k;
 	while (n--) {
