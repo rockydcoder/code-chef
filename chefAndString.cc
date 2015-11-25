@@ -2,19 +2,35 @@
 #include <string>
 using namespace std;
 int main() {
-	int counter = 0, pointer = 0;
+	int counter = 0, cCounter = 0, hCounter = 0, eCounter = 0, fCounter = 0;
 	string S;
-	char checker[4] = {'C', 'H', 'E', 'F'};
 		cin >> S;
 		for (int i = 0; i < S.length(); i++) {
-			if (S[i] == checker[pointer]) {
-				if (pointer == 3) {
-					counter++;
-				}
-				pointer = (pointer + 1) % 4;
+			switch (S[i]) {
+				case 'C':
+					cCounter++;
+					break;
+
+				case 'H':
+					if (cCounter > hCounter) {
+						hCounter++;
+					}
+					break;
+
+				case 'E':
+					if (hCounter > eCounter) {
+						eCounter++;
+					}
+					break;
+
+				case 'F':
+					if (eCounter > fCounter) {
+						fCounter++;
+					}
+					break;
 			}
 		}
 
-		cout << counter << endl;
+		cout << fCounter << endl;
 
 }
