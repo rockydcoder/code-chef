@@ -14,7 +14,7 @@ int main() {
 		// cout << "length = " << length << endl;
 		count = 0;
 		for (int i = 0; i < length; i++) {
-			if (96 < in[i] && in[i] < 123 || 64 < in[i] && in[i] < 90 ) {
+			if ((96 < in[i] && in[i] < 123) || (64 < in[i] && in[i] < 90 )) {
 				out[count++] = in[i];
 				// cout << out << endl;
 			}
